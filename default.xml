@@ -358,28 +358,29 @@
   <project path="tools/build" name="platform/tools/build" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
   <project path="tools/motodev" name="platform/tools/motodev" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
 
-  <!-- AOKP -->
-  <project path="packages/apps/PerformanceControl" name="AOKP/packages_apps_PerformanceControl" revision="jb-mr1" />
+  
 
   <!-- PA -->
   <project path="external/doclava" name="ParanoidAndroid/android_external_doclava" revision="jellybean" />
-  <project path="vendor/pa" name="ParanoidAndroid/android_vendor_pa" revision="42b5fadf6443a46aab965eac5f58cf54c19c8bea" />
   <project path="vendor/tmobile" name="ParanoidAndroid/android_vendor_tmobile" revision="jellybean" />
 
   <!-- PAC -->
-  <project path="android" name="PAC-man/android" />
-  <project path="frameworks/base" name="PAC-man/android_frameworks_base" />
-  <project path="packages/apps/Contacts" name="PAC-man/android_packages_apps_Contacts" />
-  <project path="packages/apps/Phone" name="PAC-man/android_packages_apps_Phone" />
-  <project path="packages/apps/ROMControl" name="PAC-man/packages_apps_ROMControl" />
-  <project path="packages/apps/Settings" name="PAC-man/android_packages_apps_Settings" />
-  <project path="packages/apps/Trebuchet" name="PAC-man/android_packages_apps_Trebuchet" />
-  <project path="packages/providers/ContactsProvider" name="PAC-man/android_packages_providers_ContactsProvider" />
-  <project path="system/core" name="PAC-man/android_system_core" />
-  <project path="vendor/pac" name="PAC-man/android_vendor_pac" />
+  <project path="android" name="singhdd93/android" />
+  <project path="packages/apps/ParanoidWallpapers" name="ParanoidAndroid/android_packages_apps_ParanoidWallpapers" remote="github" revision="jellybean" />
+  <project path="packages/apps/Mms" name="ParanoidAndroid/android_packages_apps_Mms" remote="github" revision="jellybean" />
+  <project path="packages/apps/Browser" name="ParanoidAndroid/android_packages_apps_Browser" remote="github" revision="jellybean" />
+  <project path="frameworks/rs" name="ParanoidAndroid/android_frameworks_rs" remote="github" revision="jellybean" />
+  <project path="frameworks/base" name="ParanoidAndroid/android_frameworks_base" remote="github" revision="jellybean-legacy"  />
+  <project path="packages/apps/Contacts" name="ParanoidAndroid/android_packages_apps_Contacts" remote="github" revision="jellybean" />
+  <project path="packages/apps/Phone" name="ParanoidAndroid/android_packages_apps_Phone" />
+  <project path="packages/apps/Settings" name="ParanoidAndroid/android_packages_apps_Settings" remote="github" revision="jellybean-legacy"  />
+  <project path="packages/apps/Launcher2" name="ParanoidAndroid/android_packages_apps_Launcher2" remote="github" revision="jellybean" />
+  <project path="packages/providers/ContactsProvider" name="CyanogenMod/android_packages_providers_ContactsProvider" />
+  <project path="system/core" name="ParanoidAndroid/android_system_core" remote="github" revision="jellybean"  />
+  <project path="vendor/pa" name="ParanoidAndroid/android_vendor_pa" remote="github" revision="jellybean" />
 
-  <project path="pac" name="PAC-man/pac" >
-    <copyfile dest="build-pac.sh" src="build.sh"/>
+  <project path="paranoid" name="ParanoidAndroid/paranoid" remote="github" revision="jellybean" >
+    <copyfile src="build.sh" dest="rom-build.sh" />
   </project>
 
 </manifest>
